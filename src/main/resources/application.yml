@@ -1,0 +1,24 @@
+server:
+  port: 8761
+
+
+# Eureka 서버 이름
+spring:
+  application:
+    name: discoverservice
+
+# Eureka Server 설정
+eureka:
+  server:
+    enable-self-preservation: true
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+# End Point 설정
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
